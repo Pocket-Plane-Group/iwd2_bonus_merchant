@@ -1,0 +1,285 @@
+@11 = ~Broche des ménestrels de Jaheira~
+
+@12 = ~Jaheira était une sage et puissante druidesse qui a voyagé avec l'enfant de Bhaal lors de nombreuses aventures le long de la côte des épées, dans la ville de Baldur, et à travers l'Amn jusqu'à Amkethran. Jaheira était au départ du côté des ménestrels, mais elle fut forcée de chercher son propre chemin lorsque les ménestrels essayèrent d'utiliser le rejeton de Bhaal à leur avantage.
+
+L'Épingle des Ménestrels est un objet de valeur, signifiant que son porteur est un membre estimé des Ménestrels. Il octroie à son porteur une exceptionnelle résistance contre un grand nombre de types d'attaques. Il n'est pas spécifiquement prévu pour une personne précise, mais il serait difficile de trouver quelqu'un qui serait prêt à le prêter ou ne serait-ce même que le perdre de vue un instant. C'est vraiment l'équivalent d'une médaille.
+
+
+PARAMETRES :
+
+Bonus aux jets de sauvegarde: +5
+Effet constant:  non-détection lorsque portée.
+Effet constant:  Sous les effets du sort Bouclier lorsque portée.
+Résistance : 15/- en résistance à l'électricité
+Poids: 1 ~
+
+@13 = ~Noirsang~
+
+@14 = ~Cette massue de chêne est couverte de taches séchées d'une matière noirâtre. Pendant le combat, une lumière sombre semble émaner de cette substance, qui devient épaisse et visqueuse. Quand la massue frappe un adversaire, les éclaboussures qui en résultent causent des dégâts acides supplémentaires.
+
+On raconte que Noirsang a été obtenu par la druidesse Jaheira lorsqu'elle libéra simultanément la cité de Franc-Marché de l'embargo de djinns, et de l'assaut par les druides de l'ombre.
+
+PARAMETRES :
+
+Dégâts :  1d6  +3
+Bonus d'attaque :  +3
+Enchantement :  +3
+Type de dégâts : contondants
+Spécial :
+  Corrosion : +1d6 de dégâts d'acide
+Poids: 3
+Compétence : arme courante, masse
+Type d'arme : à une main~
+
+
+@21 = ~Fiancée du Flasher Méga-Tapeur~
+@22 = ~Cette munition est celles de l'arbalète de Jan (le Flasher Méga-Tapeur). Le crâne est rempli d'une poudre spéciale qui explose au contact, causant un petit peu de dommages aux créatures autour de la cible.  Cette particulière "fiancée du Flasher Méga-Tapeur" a été enchantée par Jansen dans ses dernières années pour corriger sa trajectoire et retourner vers l'utilisateur, et peut faire de nombreuses surprises. Elle peut être utiliser avec n'importe quelle arbalète. Cette fiancée du Flasher sent étrangement le navet.
+
+PARAMETRES :
+
+Dégâts ::  1d2+1
+Bonus d'attaque :  +1
+Enchantement :  +1
+Type de dégâts :  projectile (perforant)
+Spécial :
+  Étourdissement : cible étourdie pour 2 rounds de combat (jet de vigueur pour annuler)
+  Boomerang : Revient à l'utilisateur
+Poids:  0
+Boomerang : Les flèches reviennent à l'archer~
+
+@23 = ~Tenue d'aventurier de Jansen~
+@24 = ~Habits d'Aventurier en Gore-Métal de marque Jansen (brevet en cours)
+
+Cette étrange armure est faite d'un métal inconnu, très souple mais solide au toucher. Elle a été créé par Jan Jansen, un fameux gnome marchand de navets et pendant un temps un illusionniste/voleur qui a accompagné l'enfant de Bhaal à travers l'Amn et la ville d'Amkethran. Cette armure ne donne pas de bonus à la Classe d'armure, mais elle procure une résistance de 25 % contre tous les dégâts physiques et un bonus de +5 à la Classe d'armure contre les missiles. Elle permet aussi de lancer des sorts. Il faut ajouter qu'elle est également très stylée.
+
+PARAMETRES :
+
+PARAMETRES :
+  Réduction des dégâts : 10/+2
+  Bonus à la CA : +5 contre les projectiles
+Poids: 1
+
+Note : nettoyage à sec exclusivement~
+
+@31 = ~Épée d'Arvoreen~
+@32 = ~Mazzy Fentan était une hobbite (qui faisait partie du peuple des petites-gens) paladine qui a vécu des aventures épiques avec l'enfant de Bhaal dans les régions de l'Amn jusqu'à Amkethran, et ces aventures sont bien contés par les gens de la Cote des Épées . Cette épée a été donnée à Mazzy  d'Arvoreen. Les enchantements qui existent dans cette épée donnent la capacité de ralentir n'importe quel adversaire frappé par cette épée et protéger l'utilisateur de tous les effets de ralentissements.
+
+PARAMETRES :
+
+Dégâts : 1d6 + 2
+Bonus d'attaque :  +2
+Enchantement :  +2
+Type de dégâts : perforants
+Spécial :
+  Sort: la cible est ralentie pour 6 rounds (avec un jet de sauvegarde)
+  Effet constant: Mouvement Libre lorsque portée
+Poids: 2
+Compétence : arme courante, petite lame
+Type d'arme : à une main~
+
+@33 = ~Arc court de Gesen~
+@34 = ~Le plus bel arc jamais construit par le maître artisan Gesen, cette arc draine l'énergie d'autres plans pour tirer des flèches d'éclair au lieu de flèches classiques... et ne nécessite donc pas de munitions. On dit qu'alors que Gesen se préparait à prendre sa retraite après avoir vendu cette arme sans prix, il se la serait fait prendre par un voleur qui l'aurait tué avec. L'arc procure aussi une protection contre l'électricité.
+
+L'arc fut perdu un temps puis fut à nouveau assemblé par Mazzy Fentan après un entremêlement avec les écorcheurs et un voyage à travers les tréfonds obscurs. En tant que vaillante servante de la justice et de la droiture, Mazzy usa de cet arc pour la défense de la vertu.
+
+PARAMETRES :
+
+Bonus d'attaque:  +4
+Dégâts:  +2 (projectile)
+Spécial :
+  Décharge: +1d8 de dégâts électriques
+  Résistance : 2/- de résistance au feu.
+Poids: 2
+Don requis:  Arme de guerre, Arc
+Type d'arme : à deux mains~
+
+@41 = ~Lame de la famille Corthala~
+@42 = ~Ce katana d'exquise facture irradie une énergie magique. La lame a été destinée pendant longtemps au puissant enchanteur de la famille Corthala d'Athkatla. on raconte que le fameux Valygar Corthala, dernier descendant de la lignée des Corthala, usa de cette lame pour tuer ses parents après les avoir transformée eux-mêmes en des abominations morts-vivantes. D'autres témoignages disent que le rôdeur rêveur utilisa cette lame et une autre épée katana (seulement connue sous le nom de Furie Celeste) aujourd'hui en même temps. Dans l'un ou l'autre cas, la Lame de Famille Corthala ne devrait pas être sous-estimée.
+
+PARAMETRES :
+
+Dégâts :  1d10 + 2
+Bonus d'attaque :   +2
+Enchantement :  +2
+Type de dégâts : tranchants
+Spécial :
+  Bonus à la CA : +2 contre les armes tranchantes
+   Venin : +1 points de dégâts du poison par seconde pendant 4 secondes (Jet de vigueur pour annuler)
+Poids:  9
+Don requis: arme exotique, épée bâtarde
+Type d'arme : à une main~
+
+@43 = ~Armure de la famille Corthala~
+@44 = ~Cette armure, dans la famille Corthala depuis des générations, protège son porteur contre toutes les formes d'attaques. Elle est enchantée de façon à donner un bonus de +3 à la Classe d'armure. Elle donne également un bonus contre l'acide, le feu et les attaques magiques.   Cette armure immunise le porteur contre les charmes quand il la porte. Le rôdeur Valygar Corthala a porté cette armure puissante pendant la plupart du temps de sa carrière aventurière.
+
+PARAMETRES :
+
+PARAMETRES :
+Bonus à la CA : +6
+Bonus max de Dextérité :  +5
+Malus de jet d'armure :  -0
+Échec des sorts profanes :  15%
+Spécial :
+  Le porteur es immunisé aux sorts de Charme Personne, Charme Personne ou Animal et Charme funeste
+  Résistance : 10/- de résistance au feu
+  Résistance : 2/- de résistance à l'acide
+  Résistance : 2/- de résistance à la magie.
+Poids: 15 ~
+
+@51 = ~Rédempteur sanctifié~
+@52 = ~Sir Keldorn Firecam était un Paladin de Torm qui a dévoué sa carrière à rayer d'Athkatla le mal de la mauvaise magie. Keldorn s'est distingué très tôt dans sa carrière de paladin, et il a reçu cette épée de Torm.  Elle est particulièrement précise, mais le protège aussi au combat par un Bouclier de Feu, et quiconque le frappe quand il la tient subit la colère de Torm, en subissant des dégâts magiques.
+
+PARAMETRES :
+
+Dégâts :  2d6 + 2
+Bonus d'attaque :  +2
+Enchantement :  +2
+Type de dégâts : tranchants
+Spécial :
+  Châtiment: 5 points de dégâts magiques à tout attaquant, se trouvant à moins de 6 longueurs(mètres), et touchant le porteur
+Poids: 12
+Don requis :   arme de guerre, espadon
+Type d'arme : à deux mains~
+
+@53 = ~Armure de plates complète Firecam~
+@54 = ~Sire Keldorn Firecam était un Paladin distingué du plus noble ordre du Cœur radieux. Aussi sage que puissant, le deuxième partie de la carrière de Keldorn a été marquée par ses aventures avec un enfant de Bhaal dans les régions aux alentours de l'Amn et d'Amkethran. Quelques dissidents racontent que Keldorn, sans aucun doute puissant, souffre d'un racisme mal dissimulé.  Cependant, tous reconnaissent que Torm était enchanté des travaux de sa vie quand son jugement final est venu.
+
+Lorsque cette armure est équipée, son porteur gagne un +1 à tous les Jets de Sauvegarde et se trouve sous le coup d'un sort d'Action Libre (peut passer à travers les toiles d'araignées et autres).
+
+PARAMETRES :
+
+Armure lourde
+Bonus à la CA : +9
+Bonus de dextérité maxi : +1
+Spécial :
+  Effet constant: Mouvement libre lorsque équipée
+  Bonus aux jets de sauvegarde: +1
+Malus de jet d'armure :  -5
+Échec des sorts profanes :  35%
+Poids: 45 ~
+
+@61 = ~Cotte de maille elfe noir~
+@62 = ~L'art tout en finesse et en solidité des elfes noirs leur permet de concevoir des équipements magnifiques et néanmoins résistants. La cotte de maille elfe noir, si finement ouvragée qu'on peut la porter sous des vêtements normaux sans que cela se voie, est un bon exemple. Cette caractéristique et son poids réduit font qu'elle peut être portée par les Voleurs et les Guerriers/Magiciens sans trop de restrictions.
+
+Comme pour la plupart des objets elfe noir, cet armure est faite d'adamantine, Contrairement à la plupart des objets accessibles et plus connus objets en adamantine,  l'adamantite (de cet objet du moins) ne tournera pas en poussière lorsqu'elle sortira des tréfonds obscurs. Cette particulière adaptation de l'armure est due au fait d'avoir été portée par Solaufein d'Ust Natha.
+
+PARAMETRES :
+
+Aucune compétence d'armure exigée
+Bonus à la CA : +8
+Bonus de dextérité maxi :  Aucun
+Malus de jet d'armure :  -0
+Échec des sorts profanes :  0%
+Spécial :
+  Les capacités des jeteurs de sorts et des roublards peuvent être exécutées sans pénalités de porter une armure.
+Poids: 30 ~
+
+@63 = ~Tsuki no Ken~
+@64 = ~On connaît peu de choses de Solaufein d'Ust Natha excepté qu'il s'est enfui des tréfonds obscurs en compagnie d'un Enfant de Bhaal et a fait de son mieux pour forger une paix dans son cœur entre les Tréfonds obscurs de son passé et le Clair de lune de son avenir. Les rumeurs disent qu'il a été étrangement intéressé par la poésie de la surface et la philosophie.
+
+Selon la légende, cette ancienne lame fut forgée à Kara-Tur par un forgeron Tengu avec un étrange sens de l'humour. Les traces de son passé furent perdues dans l'antiquité jusqu'à ce qu'elle tombe en la possession d'une haute prêtresse d'Eilistraee. Depuis lors elle a été utilisée par les serviteurs de la dame aux cheveux d'argent pour protéger les faibles et contrecarrer le mal. Elle a été donnée à Solaufein par la Déesse en personne. La lame luit d'un éclat argenté sombre et fait un son semblable à un bruissement de feuilles dans une forêt obscure lorsqu'elle fend l'air.
+
+Il fut un temps où seul Solaufein pouvait manier cette lame au combat, mais il n'a pas été vu pendant de nombreuses années, et Eilistraee parait avoir enlevé ou réduit cette restriction.
+
+Comme beaucoup de lames de lune, Tsuki no Ken est léger et rapide.
+
+PARAMETRES :
+
+Dégâts :  1D8 + 4
+Bonus d'attaque :  +4
+Enchantement :  +4
+Type de dégâts :   tranchants
+Spécial :
+  Bonus à la CA : +1 (générique)
+  Effet Constant: Sous les effets du sort Chance lorsque équipée
+  Effet Constant: Mouvement libre lorsque équipée
+  Vitesse : +1 attaque par round de combat
+  De flammes: Chaque coup a 25% de chances  d'infliger 12 point de dégâts de feu
+  Sort: La cible est sous les effets du sort Cécité (Le jet de sauvegarde de vigueur annule)
+Poids: 4
+Don requis : arme de guerre, petite épée
+Type d'arme : à une main~
+
+@71 = ~Fléau de l'Éternité~
+@72 = ~Ce fléau, souvenir de la jeunesse aventureuse du Seigneur Arnise, est depuis en sa possession. Il a été démonté, chaque pièce rangée dans un lieu différent, pour n'être utilisé qu'en cas d'extrême urgence. Le Seigneur Arnise semblait inquiet de l'aura magique qui émanait de l'arme une fois assemblée, et il avait raison. Cette arme a laissé dans l'histoire une trace sanglante, qui remonte à ses premiers possesseurs. Ce fléau a été créé par les belliqueux Rakshasas, un peuple d'esprits vengeurs friands de chair humaine, qui s'en servait comme d'une arme capable de s'adapter à tous les combats. Le fléau fut perdu au cours d'une chasse particulièrement violente, puis récupéré quand ils utilisèrent leur affinité avec la magie pour localiser son aura. Ils découvrirent alors que l'arme était tombée entre les mains d'un grand guerrier humain, et la bataille qui s'ensuivit fut vraiment splendide. Ils ont depuis utilisé cet objet comme appât, le 'perdant' encore et encore. Les objets de pouvoir attirent des gens puissants, et c'est à eux qu'on doit les plus grandes batailles.
+
+Une rumeur dirait que ce fléau fut donné à l'enfant de Bhaal par la dame Nalia Arnise en l'échange de la libération de son château d'une invasion de trolls et de yuan-ti. Il y a plusieurs observateurs cyniques qui ont suggéré plutôt que l'enfant de Bhaal a simplement volé le Fléau, et Nalia n'en aurait parlé à personne. Des témoignages contradictoires racontent que le fléau pris place dans la main de l'enfant de Bhaal, dans celle d'Anomen Delryn, dans celle du berseker Minsc, ou dans celle de Solaufein d'Ust Natha.
+
+PARAMETRES :
+
+Dégâts:  1d8  +3
+Bonus d'attaque:  +3
+Enchantement:  +3
+Type de dégâts:   contondants
+Spécial :
+  De flammes:  +1 dégâts du feu
+  Givre: +1 dégâts du froid
+  Corrosion:  +1 dégâts de l'acide
+  Sort: 33% de chances de ralentir la cible pendant 20 secondes
+Poids: 5
+Don requis:  Arme de guerre, Fléau
+Type d'arme:  à une main~
+
+@73 = ~Masse de disruption~
+@74 = ~Cette masse a été créée pour répondre à un besoin unique : tuer les non-vivants. Toute créature de cette sorte touchée par la masse court le risque d'être purement et simplement volatilisée. Les légendes parlent d'un prêtre tellement saint que son simple toucher détruisait les vampires, mais on en sait s'il devait ce pouvoir à sa foi ou à son arme., c'est un sujet pour les théologiens.
+
+
+Un rejeton de Bhaal à Athkatla a obtenu un morceau du minerai Illithium que l'artiste Sire Sarles allait façonner dans une sculpture pour un temple.  L'illithium a été utilisé pour couvrir la masse, la rendant toujours plus puissante. Cela confère à l'utilisateur de la masse une immunité aux pouvoirs de drainage de vie des plus puissants morts-vivants. On raconte que cette masse a été l'instrument de la chute du repaire de Bohdi, une puissante vampire matriarcale.
+
+PARAMETRES :
+
+Dégâts :  1d8  +2
+Bonus d'attaque :  +2
+Enchantement :  +5
+Type de dégâts : contondants
+Spécial :
+  Disruption : les morts-vivants et les extérieurs touchés par cette arme doivent réussir un jet de Vigueur pour ne pas être anéantis.
+  Coup certain (infaillible) : cette arme est considérée comme +5 pour les créatures qui requièrent une arme magique pour être touchées
+  Effet Constant:  Protection contre l'énergie négative lorsque équipée.
+Poids: 12
+Don requis :  arme courante, masse
+Type d'arme : arme à une main~
+
+@81 = ~Écaille de dragon noir~
+@82 = ~Cette armure est conçue à partir d'écailles de dragon d'ombre. Un travail élégant et soigné subordonné aux considérations pratiques la rend à la fois belle et utile. Les écailles de dragon d'ombre offrent une protection supplémentaire contre l'acide tandis que l'art excellent du forgeron et les matériaux de haute qualité assurent que l'armure est aussi souple que le cuir.
+
+Les rumeurs disent que cette armure fut forgée à la requête d'un enfant de Bhaal de l'Amn à partir des écailles d'un dragon de l'ombre qui demeurait dans les ruine d'un temple d'Amaunator près d'un village dans les collines d'Umar. Le dragon de l'ombre fut battu avec l'aide d'une pierre noire spéciale obtenue d'un fantôme à l'intérieur du temple.
+
+PARAMETRES :
+
+Armure légère
+Bonus à la CA : +9
+Bonus de dextérité maxi :  +6
+Malus de jet d'armure :  -0
+Échec des sorts profanes :  10%
+Spécial :
+   Résistance : 20/- de résistance à l'acide
+Poids: 10~
+
+@83 = ~ L'Égaliseur~
+@84 = ~L'âge de cette arme est si élevé que personne ne saurait le deviner, mais des indices de fabrication suggèrent qu'elle a pu être forgée au service de Helm. Également appelée "Épée de Neutralité", elle semble avoir été conçue pour l'équilibre et l'élimination des extrêmes. Plus le comportement d'une cible est éloigné de la neutralité, plus les dégâts infligés sont importants.
+
+Cette épée a été récemment reforgée par un rejeton de Bhaal dans Atkhatla à partir des pièces obtenues dans l'infecte prison d'un mage elfe fou, dans le repaire d'illithids et dans l'antre de spectateur. Il semblerait qu'elle été d'une utilité marginale en ce temps.
+
+PARAMETRES :
+
+Dégâts:  1d8 +3
+Bonus d'attaque:  +3
+Enchantement:  +5
+Type de dégâts:  tranchant
+Spécial :
+  Infaillible : cette arme est considérée comme +5 pour les créatures qui requièrent une arme magique pour être touchées
+  Immunité au Charme, Charme Personne, Confusion, Domination, Débilité si portée.
+  Bon: +2d6 contre les créatures d'alignement mauvais
+  Loyal: +2d6 contre les créatures chaotiques
+  Mauvais: +2d6 contre les créatures d'alignement bon
+  Chaotique: +2d6 contre les créatures loyales
+Poids: 4
+Compétence: arme de guerre, grande épée
+Type d'arme:  à une main~
+
+@100 = ~Ribald Barterman~
+@101 = ~Marché de l'Aventurier~
+
+
+

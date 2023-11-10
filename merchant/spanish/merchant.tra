@@ -1,0 +1,279 @@
+@11 = ~Broche de Arpista de Jaheira~
+
+@12 = ~Jaheira fue una sabia y poderosa druida que viajó con un Hijo de Bhaal en muchas aventuras a lo largo de la Costa de la Espada, en la ciudad de Puerta de Baldur, y por todo Amn y Amkethran. Inicialmente, Jaheira estaba alineada con los Arpistas, pero fue forzada a hacer su propio camino cuando las facciones de los Arpistas intentaron usar al Hijo de Bhaal para su propio beneficio. 
+
+Un broche de Arpista es un objeto apreciado, que señala que el portador es un acreditado y honorado miembro de los Arpistas. Concede al portador una excepcional protección contra muchas diferentes formas de atques. No son manufacturados para una persona en particular, pero estarías en apuros para encontrar a alguien que lo prestara o que siquiera apartara la vista de él. Es, muy literalmente, una insignia de honor.
+
+ESTADÍSTICAS:
+
+Bonificador a las Tiradas de Salvación: +5 
+Efecto Constante: No-Detección mientras está equipado. 
+Efecto Constante: Bajo los efectos del conjuro Escudo mientras está equipado. 
+Resistencia: 15/- Resistencia Eléctrica 
+Peso: 1~
+
+@13 = ~Sangre Negra~
+
+@14 = ~Eset garrote de roble está revestida con gotas de una sustancia parecida a la brea. En la batalla esta sustancia tiene un resplandor negro con una luz interior, y se transforma en nata y fluido. Cuando el garrote golpea a un oponente este recibe daño de ácido adicional por la salpicadura del líquido sobre la víctima.
+
+El rumor dice que Sangre Negra fue obtenido por la druida Jaheira cuando ella simultáneamente liberó la ciudad de Caravasar deun embargo comercial y de un asalto de druidas sombríos. 
+
+ESTADÍSTICAS: 
+ 
+Daño:  1d6  +3 
+Bonificador al Ataque:  +3  
+Encantamiento:  +3 
+Tipo de Daño:  Aplastante
+Especial: 
+  Corrosión: +3 de daño ácido
+Peso: 3 
+Requiere Proeza:  Arma Simple, Maza
+Clase:  Una Mano~
+
+
+@21 = ~Proyectil para Gran Matón Destellante~
+@22 = ~Esta munición era usada el las ballestas de Jan Jansen (el Gran Matón Destellante). La calavera está rellena con un polvo verde especial que explota al contacto, haciendo una pequeña cantidad de daño y atontando a las criaturas cercanas. Este Gran Matón en particular fue encantado por Jansen en sus últimos años para reformarse y regresar a su portador luego de cada uso, permitiendo disparos sin fin. Puede ser usado en cualquier ballesta. El Gran Matón extrañamente huele a nabos. 
+
+ESTADÍSTICAS: 
+ 
+Daño:  1d2+1 
+Bonificador al Ataque:  +1  
+Encantamiento:  +1 
+Tipo de Daño:  Misil (perforante)
+Especial: 
+  Atontador: El objetivo es atontado por dos asaltos de combate (Salvación de Fortaleza para resistir) 
+  Regresa: Regresa al usuario 
+Peso:  0
+Lanzador:  Ballesta~
+
+@23 = ~Vestimenta de Aventurero de Jansen~
+@24 = ~Vestimenta de Viajero de metal repelente de Insectos marca Jansen - (patente pendiente)
+
+Esta extraña armadura está construida de un extraño metal, muy flexible pero fuerte al tacto. Fue designado por Jan Jansen, un famoso gnomo vendedor de nabos e ilusionistade medio tiempo que viajó con un Hijo de Bhaal a través de Amn y Amkethran. La armadura no da bonificaciones a la clase de armadura base, pero si garantiza resistencia a todo el daño físico y un bonificador de +5 adicional contra las armas de proyectil. Se puede lanzar conjuros mientras se usa esta armadura. Además, la armadura es elegante.  
+
+ESTADÍSTICAS: 
+
+Especial: 
+  Reducción del Daño:  10/+2 
+  Bonificador a la Armadura:  +5 contra proyectiles
+Peso: 1~
+
+@31 = ~Espada de Arvoreen~
+@32 = ~Mazzy Fentan fue una paladin madiana cuyas aventuras épicas con un Hijo de Bhaal en Amn y Amkethran son bien recordadas. Esta espada fue un regalo de Arvoreen para Mazzy. Los encantamientos en su interior le dan la habilidad de ralentizar cada oponente que golpea y proteger al portador de los efectos de la lentitud.  
+
+ESTADÍSTICAS: 
+ 
+Daño:  1d6 + 2 
+Bonificador al Ataque:  +2  
+Encantamiento:  +2 
+Tipo de Daño:  Perforante
+Especial:   
+  Proceso de Conjuro: El objetivo es ralentizado por 6 asaltos (con salvación) 
+  Efecto Constante: Libertad de Movimiento mientras está equipada 
+Peso: 2
+Requiere Proeza:  Arma Simple, Espada Pequeña
+Clase:  Una Mano~
+
+@33 = ~Arco Corto de Gesen~
+@34 = ~Esta arma, la mejor jamás fabricada por el maestro arquero Gesen, extrae energía de otro plano y dispara proyectiles relampagueantes en lugar de flechas; por tanto, no necesita munición de ningún tipo. Se dice que Gesen tenía pensado retirarse tras vender esta arma de valor incalculable, pero un ladrón se la quitó de las manos y la utilizó para matarlo. Un efecto secundario del arco concede a su usuario protección contra la electricidad.
+
+Es arco fue perdido por un tiempo y luego reensamblado por Mazzy Fentan luego de un viaje por la Infraoscuridad. Como valiente defensora de la justicia y la rectitud, Mazzy usó este arco en defensa de la virtud.
+
+ESTADÍSTICAS: 
+ 
+Bonificador al Ataque:  +4  
+Daño:  +2 (misil) 
+Especial:  
+  Shock: +1d8 de daño eléctrico
+  Resistencia: 6/- Resistencia Eléctrica
+Peso: 2
+Requiere Proeza:  Arma Marcial, Arco
+Clase:  Dos Manos~
+
+@41 = ~Espada de la familiar de Corthala~
+@42 = ~Esta fina katana irradia energía mágica. La espada fue designada mucho tiempo atrás por un poderoso encantador de la familia de Corthala de Athkatla. Los rumores dicen que el famoso Valygar de Corthala, último vástago de la familia Corthala, usó esta espada para matar a sus parientes luego de que ellos se convirtieran en abominaciones no-muertas. Otros dicen que el pensativo explorador usó esta espada y otra conocida como Furia Celestial al mismo tiempo. En ambos casos, la Espada de la Familia de Cothala no debería ser subestimada. 
+
+ESTADÍSTICAS: 
+ 
+Daño:  1d10 + 2 
+Bonificador al Ataque:  +2  
+Encantamiento:  +2 
+Especial:  
+  Bonificación a la Armadura:  +2 contra armas cortantes
+  Veneno: +1 punto de daño de veneno por segundo por 4 segundos (sin salvación)
+Tipo de Daño:  Cortante
+Peso:  9
+Requiere Proeza:  Arma Exótica, Espada Bastarda
+Clase:  Una Mano~
+
+@43 = ~Armadura de la Familia Corthala~
+@44 = ~Esta armadura, que pertenece desde hace mucho a la familia Corthala, protege a su usuario contra los ataques de todo tipo. Está encantada para conceder un bonificador +3 a la Clase de Armadura. También añade una bonificación a la resistencia al ácido, al fuego y al daño mágico, además de inmunizar a su dueño contra los conjuros de Hechizar mientras la lleve puesta. El explorador Valygar de Corthala usó esta potente armadura durante la mayoría de su carrera de aventurero.
+
+ESTADÍSTICAS: 
+ 
+Armadura Liviana
+Bonificador a la Armadura: +6 
+Bonificador de la Destreza Máxima:  +5 
+Penalización de Frenada de Armadura:  -0 
+Fallo del Conjuro Arcano:  15% 
+Especial: 
+  El portador es inmune a cualquier forma de dominio 
+  Resistencia:  10/- Resistencia al Fuego
+  Resistencia:  10/- Resistencia al Ácido
+  Resistencia:  10/- Resistencia al Daño Mágico
+Peso: 15~ 
+
+@51 = ~Santo Redentor~
+@52 = ~Sir Keldorn Levafuego fue un Paladín de Torm que dedicó su carrera a liberar a Athkatla de la plaga del mal. Keldorn se distinguió pronto en su carrera como paladín, y recibió esta espada como un favor de Torm. Es excepcionalmente precisa, pero también lo protegía en la batalla y cualquiera que lo golpeara recibía la furia de Torm en forma de daño mágico. 
+
+ESTADÍSTICAS: 
+ 
+Daño:  2d6 + 2 
+Bonificador al Ataque:  +2  
+Encantamiento:  +2 
+Especial: 
+  Retribución: Los atacantes cercanos reciben 5 puntos de daño mágico
+Tipo de Daño: Cortante
+Peso: 12
+Requiere Proeza:  Arma Marcial, Gran Espada
+Clase:  Dos Manos~ 
+
+@53 = ~Armadura Completa de Levafuego~
+@54 = ~Sir Keldorn Levafuego fue un distinguido paladín de la Orden del Muy Radiante Corazón. Sabio y poderoso, la segunda mitad de la carrera de Keldorn fue marcada por sus aventuras con un Hijo de Bhaal en las áreas circundantes de Amn y Amkethran. Algunos disidentes reportan que Keldorn, aunque indudablemente poderoso, tenía un racismo defícil de esconder. A pesar de eso, todos están de acuerdo en que Torm estaba complacido con el trabajo de su vida cuando le llegó el día del juicio final. 
+
+Mientras está equipada provee al portador un bonificador de +1 a todas las tiradas de salvación y concede libertad de movimiento (puede pasar a traves de telaraña y otros efectos). 
+
+ESTADÍSTICAS: 
+ 
+Armadura Pesada
+Bonificación a la Armadura: +9 
+Bonificador de la Destreza Máxima:  +1 
+Especial:   
+  Efecto Constante: Libertad de Movimiento cuando está equipada
+  Bonificador a las Tiradas de Salvación: +1 
+Penalización de Frenada de Armadura:  -5 
+Fallo del Conjuro Arcano:  35% 
+Peso: 45~
+
+@61 = ~Armadura Drow~
+@62 = ~La delicada pero resistente manufactura de la raza élfica les permite diseñar muchos objetos muy bellos y útiles. Estre ellas está la Cota de Cadenas élfica, la cual está tan finamente forjada que puede ser usada bajo las ropas normales sin revelar su presencia. Esto y su ligereza le permite ser usada por ladrones y guerreros/magos con pocas restricciones.
+
+Este objeto, como mucho del equipo drow, está creado con adamantita. A diferencia de las tan conocidas variaciones, la adamantita no se convertirá en polvo al salir de la Infraoscuridad. Esta pieza de armadura en particular se dice que ha sido usada por Solaufein de Ust Natha.  
+
+ESTADÍSTICAS: 
+ 
+No requiere talento con armadura
+Bonificador de Armadura: +8 
+Bonificador de la Destreza Máxima: Ninguno
+Penalización de Frenada de Armadura:  -0 
+Fallo del Conjuro Arcano:  0% 
+Especial: 
+  Las habilidades de lanzamiento de conjuros y de ladrón pueden ser usadas sin penalizaciones usando esta armadura. 
+Peso: 30~
+
+@63 = ~Tsuki no Ken~
+@64 = ~Se conoce poco de Solaufein de Ust Natha salvo que escapó de la Infraoscuridad en compañía de un Hijo de Bhaal e hizo lo mejor que pudo para forjar la paz en su corazón entre la Infraoscuridad de su pasado y la Luz Lunar de su futuro. Los rumores dicem que estaba extrañamente interesado en la filosofía y la poesía. 
+
+Según la leyenda, la espada ancestral de Solaufein fue forjada originalmente en Kara-Tur por un herrero Tengu con un extraño sentido del humor. Los recuerdos de sus transiciones fueron perdidos hace mucho hasta que llegó a las manos de una sacerdotisa de Eilistraee. Desde entonces ha sido usada por seguidores de Lady Silverhair para proteger a los débiles y derribar a la maldad. Fue concedida personalmente a Solaufein por la diosa misma. La espada brilla con una luz oscura y plateada y a su paso deja un sonido que es como el murmullo de las hojas en un bosque oscuro. 
+
+Hubo un tiempo en el cual solo Solaufein podía usar esta espada en combate, pero él no ha sido visto en muchos años y Eilistraee parece haber quitado su restricción.
+
+Como las Espadas Lunares, Tsuki no Ken es rápida y liviana.
+
+ESTADÍSTICAS: 
+ 
+Daño:  1D8 + 4 
+Bonificador al Ataque:  +4  
+Encantamiento:  +4 
+Especial: 
+  Bonificador de Armadura: +1 (genérico) 
+  Efecto Constante: Bajo los efectos de el conjuro Suerte mientras está equipada. 
+  Efecto Constante: Libertad de Movimiento mientras está equipada 
+  Velocidad: 1 ataque adicional por asalto
+  Llama: 25% de probabilidad de causar 12 puntos de daño de fuego
+  Proceso de Conjuro: El objetivo cae bajo los efectos del conjuro Ceguera (salvación de Voluntad para negar efectos) 
+Tipo de Daño: Cortante
+Peso: 4
+Requiere Proeza:  Arma Simple, Espada Pequeña
+Clase:  Una Mano~
+
+@71 = ~Mayal de las Edades~
+@72 = ~El mayal ha estado al cuidado de Lord Arnise durante algún tiempo y es una reliquia de sus aventureros tiempos de juventud. Se ha mantenido desarmado, guardando las piezas en diferentes lugares, y sólo se utiliza en casos de emergencia. Lord Arnise estaba preocupado por la poderosa magia que irradiaba el arma cuando se montaba, y no sin razón. Una senda de destrucción la ha seguido a través de su historia, comenzando en sus propietarios originales. El mayal fue una creación de los rakshasa, una raza de espíritus vengativos que ansiaban la carne humana, y lo utilizaban como un arma adaptable que pudiera servir en cualquier batalla. Durante un enfrentamiento muy violento, el mayal desapareció. Utilizaron su afinidad a la magia para rastrear su poderosa aura. Descubrieron que el arma se encontraba en las manos de un gran guerrero humano, y el combate que tuvo lugar a continuación fue realmente espléndido. Desde entonces, han utilizado el objeto como "cebo" incontables veces. Los objetos poderosos gravitan alrededor de gente poderosa, y la gente poderosa proporciona las batallas más gloriosas. 
+
+Los rumores dicen que este mayal fue concedido a un Hijo de Bhaal por Lady Nalia de'Arnise a cambio de liberar a su castillo de una invasión de trolls y Yuan-ti's. Observadores más cínicos sugieren que el Hijo de Bhaal simplemente robó el mayal y Nalia mantuvo la boca cerrada. Conflictivos testimonios dicen que el mayal se encontraba en manos de el Hijo de Bhaal, Anomen Delryn, el berserker Minsc, y Solaufein de Ust Natha. 
+
+ESTADÍSTICAS: 
+ 
+Daño:  1d8  +3 
+Bonificador al Ataque:  +3  
+Encantamiento:  +3 
+Tipo de Daño:  Aplastante
+Especial: 
+  Llama: +1 por daño de fuego
+  Frío: +1 por daño de frío
+  Corrosión: +1 por daño de ácido
+  Proceso de Conjuro: 33% de probabilidad de que el objetivo sea Ralentizado por 20 segundos
+Peso: 5
+Requiere Proeza:  Arma Marcial, Mayal
+Clase:  Una Mano~ 
+
+@73 = ~Maza de la Disrupción~
+@74 = ~Esta pesada maza fue creada con un propósito específico: destruir muertos vivientes. Cualquier criatura impactada por ella no sólo siente el golpe del arma, sino que, además, hay una posibilidad de que sea borrada de la faz de la tierra. Hay leyendas que hablan de un clérigo que con su solo roce podía enviar a un vampiro al olvido, pero el hecho de si era él el que fortalecía el arma o era al contrario sigue siendo tema de debate para los teólogos.
+
+Un Hijo de Bhaal en Athkatla obtuvo una carga de piedra de Ilitio que el artista Sir Sarles quería para moldar una escultura para un templo. El ilitio fue usado para recubrir la maza, haciéndola aún más potente. Confiere a su usuario inmunidad a los poderes de drenaje de vida de los muertos vivientes más poderosos. Los rumores dicen que esta maza fue el instrumente detrás de la caída de Bodhi, una poderosa matriarca vampira.
+
+ESTADÍSTICAS: 
+ 
+Daño:  1d8  +2 
+Bonificador al Ataque:  +2  
+Encantamiento:  +5 
+Tipo de Daño: Aplastante
+Especial: 
+  Disrupción: Todos los muertos vivientes y criaturas del más allá golpeados por el arma deben superar una tirada de salvación o serán destruidos 
+  Golpe Seguro: Esta arma es tratada como si tuviera un encantamiento +5 con el propósito de golpear criaturas que necesitan armas mágicas para ser golpeadas 
+  Efecto Constante: Protección Contra la Energía Negativa mientras está equipada. 
+Peso: 12
+Requiere Proeza:  Arma Simple, Maza
+Clase:  Una Mano~ 
+
+@81 = ~Shadow Dragon Scale~
+@82 = ~Esta armadura está formada por escamas entrelazadas de dragón de las sombras. El elegante diseño y las consideraciones prácticas hacen de esta armadura algo bonito y útil. Las escamas del dragón de las sombras proporcionan al portador una protección extra contra el ácido. 
+
+Los rumores dicen que esta armadura fue forjada a pedido de un Hijo de Bhaal de Amn a partir de las escamas de un Dragón de la Sombra que se encontraba en un templo abandonado de Amaunator cerca de una villa en las Colinas de Umar. El Dragón de las Sombras fue derrotado con la ayuda de una piedra de guarda obtenido de un fantasma que había en el templo.
+
+ESTADÍSTICAS: 
+ 
+Armadura Liviana
+Bonificador a la Armadura: +9 
+Bonificador de la Destreza Máxima:  +6 
+Penalización de Frenada de Armadura:  -0 
+Fallo del Conjuro Arcano:  10% 
+Especial:
+  Resistencia: 20/- Resistencia al Ácido
+Peso: 10~ 
+
+@83 = ~La Igualadora~
+@84 = ~Esta espada es tan antigua, que su verdadero origen se ha perdido para siempre; sin embargo, sus marcas indican que probablemente fue forjada para estar al servicio de Helmo. El arma, también llamada "La Espada de la Neutralidad", parece estar diseñada para buscar los extremos y acabar con ellos, llevando al universo hacia un equilibrio más armonioso. Cuanto más alejado de la neutralidad verdadera esté el comportamiento de su víctima, mayor será el daño que ésta sufra.
+
+Esta espada fue reformada recientemente por un Hijo de Bhaal en Atkhatla a partir de piezas obtenidas en la prisión de un mago elfo loco, una madriguera de ilícidos y una cueva de contempladores. Pero los rumores dicen que no fue de mucha utilidad en su tiempo. 
+
+ESTADÍSTICAS: 
+ 
+Daño:  1d8 +3 
+Bonificador al Ataque:  +3  
+Encantamiento:  +5 
+Tipo de Daño:  Cortante
+Especial:
+  Golpe Seguro: Esta arma es tratado como si tuviera un encantamiento +5 con el propósito de golpear criaturas que necesitan armas mágicas para ser golpeadas 
+  Inmunidad a Hechizo Horrible, Dominar Persona, Confusión, Commando, Pensamiento Estricto mientras está equipada 
+  Sagrada: +2d6 contra criaturas malignas
+  Legal: +2d6 de daño contra criaturas caóticas
+  Maldita: +2d6 de daño contra criaturas buenas
+  Caótica: +2d6 de daño contra criaturas legales
+Peso: 4
+Requiere Proeza: Arma Marcial, Espada Larga
+Clase:  Una Mano~
+
+@100 = ~Ribald el Truequista~
+@101 = ~Mercado del Aventurero~
+

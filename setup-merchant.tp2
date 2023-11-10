@@ -1,0 +1,111 @@
+/*************************************************************************
+ * Bonus Merchant Mod
+ *
+ * http://www.cs.berkeley.edu/~weimer/bgate
+ *
+ *************************************************************************/
+BACKUP ~merchant/backup~ // where should we put backup files? 
+// where should tell the user to send email if something goes wrong? 
+AUTHOR "weimer@cs.berkeley.edu (http://www.cs.berkeley.edu/~weimer/bgate)"
+
+LANGUAGE ~American English~ ~american~ 
+         ~merchant/american/merchant.tra~
+LANGUAGE ~Francais (traduction de "J.R.R. Tolkien")~
+         ~french~ ~merchant/french/merchant.tra~
+LANGUAGE ~Traducción al Español (hecha por Bhasbuto, Clan DLAN)~ "spanish"
+         ~merchant/spanish/merchant.tra~
+LANGUAGE ~Deutsche Sprache (Übersetzung durch Marco Ivezic)~ "german"
+         ~merchant/german/merchant.tra~
+
+///////////////////////////////////////////////////////////////////////
+// Bonus Merchant Mod
+///////////////////////////////////////////////////////////////////////
+BEGIN "Bonus Merchant for IWD2"
+
+COPY    ~merchant/copy~ ~override~
+
+COPY    ~merchant/itm/w#jah1.itm~       ~override/w#jah1.itm~
+  SAY NAME2 @11 SAY DESC @12
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 100000 // arbitrary
+COPY    ~merchant/itm/w#jah2.itm~       ~override/w#jah2.itm~
+  SAY NAME2 @13 SAY DESC @14
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 64600 // twice 00club98
+
+COPY    ~merchant/itm/w#jan1.itm~       ~override/w#jan1.itm~
+  SAY NAME2 @21 SAY DESC @22
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 300000 // arbitrary
+COPY    ~merchant/itm/w#jan2.itm~       ~override/w#jan2.itm~
+  SAY NAME2 @23 SAY DESC @24
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 72000 // twice 00robemr
+
+COPY    ~merchant/itm/w#mazz1.itm~       ~override/w#mazz1.itm~
+  SAY NAME2 @31 SAY DESC @32
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 45000 // same as 00ax2hbb
+COPY    ~merchant/itm/w#gesen.itm~       ~override/w#gesen.itm~
+  SAY NAME2 @33 SAY DESC @34
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 64620 // twice as 00ax1hck
+
+COPY    ~merchant/itm/w#valy1.itm~       ~override/w#valy1.itm~
+  SAY NAME2 @41 SAY DESC @42
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 72335 // same as 00swdb93
+COPY    ~merchant/itm/w#valy2.itm~       ~override/w#valy2.itm~
+  SAY NAME2 @43 SAY DESC @44
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 100175 // same as 50hfltms
+
+COPY    ~merchant/itm/w#keld1.itm~       ~override/w#keld1.itm~
+  SAY NAME2 @51 SAY DESC @52
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 33400 // four times 00swdt89
+COPY    ~merchant/itm/w#keld2.itm~       ~override/w#keld2.itm~
+  SAY NAME2 @53 SAY DESC @54
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 53300 // (00plat04+00rin22)*2
+
+COPY    ~merchant/itm/w#sola1.itm~       ~override/w#sola1.itm~
+  SAY NAME2 @61 SAY DESC @62
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 81300 // same as 60hfcncd
+COPY    ~merchant/itm/w#sola2.itm~       ~override/w#sola2.itm~
+  SAY NAME2 @63 SAY DESC @64
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 150000 // arbitrary
+
+COPY    ~merchant/itm/w#foa.itm~       ~override/w#foa.itm~
+  SAY NAME2 @71 SAY DESC @72
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 98308 // same as 00flal97
+COPY    ~merchant/itm/w#mod.itm~       ~override/w#mod.itm~
+  SAY NAME2 @73 SAY DESC @74
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 72312 // same as 00mace95
+
+COPY    ~merchant/itm/w#shad.itm~       ~override/w#shad.itm~
+  SAY NAME2 @81 SAY DESC @82
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 104750 // same as 60hfptpf
+COPY    ~merchant/itm/w#equal.itm~       ~override/w#equal.itm~
+  SAY NAME2 @83 SAY DESC @84
+  WRITE_SHORT 0x42 0    // easy to ID
+  WRITE_LONG  0x34 192465 // 1.5 times zzm6uc
+
+COPY    ~merchant/cre/w#ribald.cre~     ~override/w#ribald.cre~
+  SAY NAME1 @100 SAY NAME2 @100
+
+COPY    ~merchant/sto/w#ribald.sto~     ~override/w#ribald.sto~
+  SAY 0xc @101
+
+EXTEND_TOP ~ar1102.bcs~ ~merchant/bcs/addin.bcs~
+EXTEND_TOP ~ar6004.bcs~ ~merchant/bcs/addin.bcs~
+
+COMPILE ~merchant/dlg/ribald.d~       
+  USING ~merchant/%s/ribald.tra~
+
+AT_INTERACTIVE_EXIT ~VIEW merchant\README-Merchant.txt~
