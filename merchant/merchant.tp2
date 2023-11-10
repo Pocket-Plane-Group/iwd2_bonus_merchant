@@ -73,10 +73,6 @@ COPY ~merchant/itm/w#mazz1.itm~ ~override~
   SAY NAME2 @31 
   SAY DESC  @32
   
-COPY ~merchant/itm/w#mazz2.itm~ ~override~
-  SAY NAME2 @31 
-  SAY DESC  @32
-  
 COPY ~merchant/itm/w#gesen.itm~ ~override~
   SAY NAME2 @33 
   SAY DESC  @34
