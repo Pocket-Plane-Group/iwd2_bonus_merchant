@@ -1,0 +1,7 @@
+IF
+	Global("W#MakeRibald","MYAREA",0)
+THEN
+	RESPONSE #100
+		CreateCreature("w#ribald","w#ribald",[100.100],0)
+		SetGlobal("W#MakeRibald","MYAREA",1)
+END
