@@ -1,8 +1,8 @@
-@1000 = ~Ribald el Truequista a tu servicio. Mi Mercado del Aventurero móvil tiene la mercadería más fiana en todos los Diez-Pueblos. La más amplia selección de bienes exóticos, los mejores precios y sin imitaciones. Solo mercancía, simple y llanamente.~
+@1000 = ~Ribald el Truequista a vuestro servicio. Mi Mercado del Aventurero móvil tiene la mercadería más fiana en todos los Diez-Pueblos. La más amplia selección de bienes exóticos, los mejores precios y sin imitaciones. Solo mercancía, simple y llanamente.~ [ribald01]
 @1001 = ~Ribald, ¿qué estás haciendo aquí?~
   @1002 = ~Estoy tomando un respiro del manejo del Mercado del Aventurero en Athkatla. Luego de que ciertos engendros de Bhaal dejaran los Reinos, mucho equipamento interesante cayó en mi inventario. Desafortunadamente, nadie en Amn tendrá nada que hacer con él, así que decidí buscar clientes en el frío norte.~
 @1003 = ~¿Por qué harías negocios aquí?~
-  @1004 = ~Buhoneros, artesanos o engendros del infierno: No me interesa. Todo lo que importa es el negocio. Y Ribald está aquí para hacer uno contigo.~
+  @1004 = ~Nómadas, artesanos o cualquier criatura infernal... no me importa lo más mínimo. Lo único que importa es el negocio y Ribald está aquí para cerrar uno con vuesas mercedes.~ [ribald04]
 @1005 = ~Este podría no ser un lugar seguro para ti... un ataque no está fuera de cuenta.~
   @1006 = ~No te preocupes por mi. Mi reputación como mago no es pequeña, y podré manejar las cosas si se ponen demasiado exitantes... o demasiado desafiantes.~
 @1007 = ~Si, me gustaría ver lo que tienes disponible.~

@@ -279,4 +279,9 @@ Type:  One-handed~
 
 @100 = ~Ribald Barterman~
 @101 = ~Adventurer's Mart~
-
+@102 = ~Ribald Barterman at yer service.~ [ribald01]
+@103 = ~The Adventure Mart's the finest shopping in all of Faerun: widest selection, lowest prices, and nary a fancy illustration. Just the goods, bare and plain.~ [ribald02]
+@104 = ~What can we do to make yer dreams come true today?~ [ribald03]
+@105 = ~Peddlers, artisans, or hellspawn, I care nae a blot. All that matters is the deal, and Ribald's here to make one with ya.~ [ribald04]
+@106 = ~[ribald05]~ [ribald05]
+@107 = ~[ribald06]~ [ribald06]

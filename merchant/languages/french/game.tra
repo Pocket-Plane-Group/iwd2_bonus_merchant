@@ -280,6 +280,9 @@ Type d'arme:  à une main~
 
 @100 = ~Ribald Barterman~
 @101 = ~Marché de l'Aventurier~
-
-
-
+@102 = ~Ribald Troqueur, à votre service.~ [ribald01]
+@103 = ~Le Marché de l'Aventure est la plus luxueuse enseigne de tout Féérune : large gamme de produits, prix cassés, et pas de publicité. Juste les produits, clairement visibles.~ [ribald02]
+@104 = ~Que puis-je faire pour réaliser vos rêves les plus chers ?~ [ribald03]
+@105 = ~Trafiquants, artisans ou démons, je n'en ai rien à faire. Seul le commerce compte, et Ribald est ici pour faire des affaires avec vous.~ [ribald04]
+@106 = ~[ribald05]~ [ribald05]
+@107 = ~[ribald06]~ [ribald06]

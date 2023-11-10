@@ -1,8 +1,8 @@
-@1000 = ~Ribald Barterman à votre service. Ma boutique, "Tout pour les Aventuriers ", vous propose la meilleure qualité de tout Faerun. Le choix le plus vaste, les prix les plus bas. Vous ne trouverez pas ici de ces articles snobinards... non, pour moi, les produits se suffisent à eux-mêmes.~
+@1000 = ~Ribald Barterman à votre service. Ma boutique, "Tout pour les Aventuriers ", vous propose la meilleure qualité de tout Faerun. Le choix le plus vaste, les prix les plus bas. Vous ne trouverez pas ici de ces articles snobinards... non, pour moi, les produits se suffisent à eux-mêmes.~ [ribald01]
 @1001 = ~Ribald, que faites vous donc ici?~
   @1002 = ~Je stoppe pendant un court moment de diriger le Marché de l'Aventurier dans Athkatla. Après qu'un certain rejeton de Bhaal est parti vers des régions (ou des royaumes) inconnus, il laissa tomber un peu de son intéressant équipement dans mon inventaire. Malheureusement, personne en Amn n'avait quelque chose à faire avec ceci, donc je décidai de chercher des clients dans le grand nord.~
 @1003 = ~Pourquoi voulez-vous faire vos affaires ici?~
-  @1004 = ~Colporteurs, artisans ou enfants de l'enfer: cela m'est égal.  Tout cela, c'est le commerce. Et Ribald est ici pour en faire avec vous.~
+  @1004 = ~Trafiquants, artisans ou démons, je n'en ai rien à faire. Seul le commerce compte, et Ribald est ici pour faire des affaires avec vous.~ [ribald04]
 @1005 = ~Ce n'est pas un bon endroit pour vous -- une attaque peut survenir d'un moment à l'autre.~
   @1006 = ~Ne vous inquiétez pas pour moi. En tant que mage n'ayant pas une petite réputation, je peux me téléporter dehors si cela devenait trop mouvementé ... ou trop ennuyeux.~
 @1007 = ~Oui, j'aimerai voir ce que vous avez disponible.~
