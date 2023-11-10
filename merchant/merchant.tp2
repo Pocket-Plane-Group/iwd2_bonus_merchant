@@ -44,6 +44,12 @@ BEGIN @1000 DESIGNATED 0
 REQUIRE_PREDICATE GAME_IS ~iwd2~ @1001
 LABEL ~ww_iwd2_bonus_merchant~
 
+OUTER_SET install_audio = 0
+ACTION_IF (FILE_EXISTS ~merchant/audio/%LANGUAGE%/w#riba01.ogg~) BEGIN
+  OUTER_SET install_audio = 1
+  LAF HANDLE_AUDIO STR_VAR audio_path = EVAL ~merchant/audio/%LANGUAGE%~ oggdec_path = ~merchant/audio~ sox_path = ~merchant/audio~ END
+END
+
 COPY ~merchant/bam~             ~override~
      ~merchant/spl~             ~override~
 
@@ -64,6 +70,10 @@ COPY ~merchant/itm/w#jan2.itm~  ~override~
   SAY DESC  @24
   
 COPY ~merchant/itm/w#mazz1.itm~ ~override~
+  SAY NAME2 @31 
+  SAY DESC  @32
+  
+COPY ~merchant/itm/w#mazz2.itm~ ~override~
   SAY NAME2 @31 
   SAY DESC  @32
   
@@ -114,21 +124,19 @@ COPY ~merchant/itm/w#equal.itm~  ~override~
 COPY ~merchant/cre/w#ribald.cre~ ~override~
   SAY NAME1 @100 
   SAY NAME2 @100
-  SAY 0xe8  @102 // select: Ribald Barterman at yer service.
-  SAY 0xec  @103 // select: The Adventure Mart's the finest shopping in all of Faerûn: widest selection, lowest prices, and nary a fancy illustration. Just the goods, bare and plain. 
-  SAY 0xf0  @104 // select: What can we do to make yer dreams come true today?
-  SAY 0xf4  @105 // select: Peddlers, artisans, or hellspawn, I care nae a blot. All that matters is the deal, and Ribald's here to make one with ya.
-  SAY 0xe0  @106 // damage
-  SAY 0x13c @107 // dying
-
+  PATCH_IF install_audio BEGIN
+    SAY 0xe8  @102 // select: Ribald Barterman at yer service.
+    SAY 0xec  @103 // select: The Adventure Mart's the finest shopping in all of Faerûn: widest selection, lowest prices, and nary a fancy illustration. Just the goods, bare and plain. 
+    SAY 0xf0  @104 // select: What can we do to make yer dreams come true today?
+    SAY 0xf4  @105 // select: Peddlers, artisans, or hellspawn, I care nae a blot. All that matters is the deal, and Ribald's here to make one with ya.
+    SAY 0xe0  @106 // damage
+    SAY 0x13c @107 // dying
+  END
+  
 COPY ~merchant/sto/w#ribald.sto~ ~override~
   SAY 0xc @101
 
 EXTEND_BOTTOM ~ar1102.bcs~ ~merchant/baf/addin.baf~
 EXTEND_BOTTOM ~ar6004.bcs~ ~merchant/baf/addin.baf~
 
-COMPILE ~merchant/dlg/ribald.d~     
-
-ACTION_IF (FILE_EXISTS ~merchant/audio/%LANGUAGE%/ribald01.ogg~) BEGIN
-  LAF HANDLE_AUDIO STR_VAR audio_path = EVAL ~merchant/audio/%LANGUAGE%~ oggdec_path = ~merchant/audio~ sox_path = ~merchant/audio~ END
-END
+COMPILE ~merchant/dlg/ribald.d~ 

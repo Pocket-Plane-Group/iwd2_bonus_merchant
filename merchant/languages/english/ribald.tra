@@ -1,8 +1,8 @@
-@1000 = ~Ribald Barterman at yer service. My Mobile Adventurer's Mart is the finest shopping in all of the Ten-Towns. Widest selection of exotic goods, moderate prices, and nary a fancy illustration. Just the goods, bare and plain.~ [ribald01]
+@1000 = ~Ribald Barterman at yer service. My Mobile Adventurer's Mart is the finest shopping in all of the Ten-Towns. Widest selection of exotic goods, moderate prices, and nary a fancy illustration. Just the goods, bare and plain.~ [w#riba01]
 @1001 = ~Ribald, what are you doing here?~
   @1002 = ~I'm taking a break from running the Adventurer's Mart proper in Athkatla. After a certain Bhaalspawn left for parts (or realms) unknown, quite a bit of interesting equipment fell into my inventory. Unfortunately, no one in Amn will have anything to do with it, so I decided to seek customers in the frozen north.~
 @1003 = ~Why would you do business here?~
-  @1004 = ~Peddlers, artisans or hellspawn: I care nay a blot. All that matters is the deal. And Ribald's here to make one with you.~ [ribald04]
+  @1004 = ~Peddlers, artisans or hellspawn: I care nay a blot. All that matters is the deal. And Ribald's here to make one with you.~ [w#riba04]
 @1005 = ~This may not be a safe place for you -- an attack is not out of the question.~
   @1006 = ~Don't worry about me. As a mage of no small repute I can spirit myself away if things here become too exciting ... or too dull.~
 @1007 = ~Yes, I'd like to see what you have available.~
