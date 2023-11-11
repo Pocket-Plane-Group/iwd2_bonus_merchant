@@ -122,13 +122,13 @@ COPY ~merchant/itm/w#equal.itm~  ~override~ // equalizer
 COPY ~merchant/cre/w#ribald.cre~ ~override~
   SAY NAME1 @100 
   SAY NAME2 @100
+  SAY 0xe0  @106 // damage
+  SAY 0x13c @107 // dying
   PATCH_IF install_audio BEGIN
     SAY 0xe8  @102 // select: Ribald Barterman at yer service.
     SAY 0xec  @103 // select: The Adventure Mart's the finest shopping in all of Faerûn: widest selection, lowest prices, and nary a fancy illustration. Just the goods, bare and plain. 
     SAY 0xf0  @104 // select: What can we do to make yer dreams come true today?
     SAY 0xf4  @105 // select: Peddlers, artisans, or hellspawn, I care nae a blot. All that matters is the deal, and Ribald's here to make one with ya.
-    SAY 0xe0  @106 // damage
-    SAY 0x13c @107 // dying
   END
   
 COPY ~merchant/sto/w#ribald.sto~ ~override~
