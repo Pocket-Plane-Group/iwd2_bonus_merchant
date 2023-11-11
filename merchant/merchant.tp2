@@ -44,6 +44,8 @@ BEGIN @1000 DESIGNATED 0
 REQUIRE_PREDICATE GAME_IS ~iwd2~ @1001
 LABEL ~ww_iwd2_bonus_merchant~
 
+INCLUDE ~merchant/lib/functions.tpa~
+
 OUTER_SET install_audio = 0
 ACTION_IF (FILE_EXISTS ~merchant/audio/%LANGUAGE%/w#riba01.ogg~) BEGIN
   OUTER_SET install_audio = 1
@@ -53,67 +55,67 @@ END
 COPY ~merchant/bam~             ~override~
      ~merchant/spl~             ~override~
 
-COPY ~merchant/itm/w#jah1.itm~  ~override~
+COPY ~merchant/itm/w#jah1.itm~  ~override~ // jaheira's harper pin
   SAY NAME2 @11 
   SAY DESC  @12
   
-COPY ~merchant/itm/w#jah2.itm~  ~override~
+COPY ~merchant/itm/w#jah2.itm~  ~override~ // blackblood +3
   SAY NAME2 @13 
   SAY DESC  @14
   
-COPY ~merchant/itm/w#jan1.itm~  ~override~
+COPY ~merchant/itm/w#jan1.itm~  ~override~ // flasher master bruiser mate
   SAY NAME2 @21 
   SAY DESC  @22
   
-COPY ~merchant/itm/w#jan2.itm~  ~override~
+COPY ~merchant/itm/w#jan2.itm~  ~override~ // Jansen AdventureWear
   SAY NAME2 @23 
   SAY DESC  @24
   
-COPY ~merchant/itm/w#mazz1.itm~ ~override~
+COPY ~merchant/itm/w#mazz1.itm~ ~override~ // Sword of Arvoreen
   SAY NAME2 @31 
   SAY DESC  @32
   
-COPY ~merchant/itm/w#gesen.itm~ ~override~
+COPY ~merchant/itm/w#gesen.itm~ ~override~ // gesen's bow
   SAY NAME2 @33 
   SAY DESC  @34
   
-COPY ~merchant/itm/w#valy1.itm~ ~override~
+COPY ~merchant/itm/w#valy1.itm~ ~override~ // Corthala Family Blade
   SAY NAME2 @41 
   SAY DESC  @42
   
-COPY ~merchant/itm/w#valy2.itm~ ~override~
+COPY ~merchant/itm/w#valy2.itm~ ~override~ // Corthala Family Armor
   SAY NAME2 @43 
   SAY DESC  @44
   
-COPY ~merchant/itm/w#keld1.itm~ ~override~
+COPY ~merchant/itm/w#keld1.itm~ ~override~ // Hallowed Redeemer
   SAY NAME2 @51 
   SAY DESC  @52
   
-COPY ~merchant/itm/w#keld2.itm~ ~override~
+COPY ~merchant/itm/w#keld2.itm~ ~override~ // Firecam Full-Plate Armor
   SAY NAME2 @53 
   SAY DESC  @54
   
-COPY ~merchant/itm/w#sola1.itm~ ~override~
+COPY ~merchant/itm/w#sola1.itm~ ~override~ // Drow Elven Chain
   SAY NAME2 @61 
   SAY DESC  @62
   
-COPY ~merchant/itm/w#sola2.itm~ ~override~
+COPY ~merchant/itm/w#sola2.itm~ ~override~ // Tsuki no Ken
   SAY NAME2 @63 
   SAY DESC  @64
   
-COPY ~merchant/itm/w#foa.itm~   ~override~
+COPY ~merchant/itm/w#foa.itm~   ~override~ // flail of ages +3
   SAY NAME2 @71 
   SAY DESC  @72
   
-COPY ~merchant/itm/w#mod.itm~   ~override~
+COPY ~merchant/itm/w#mod.itm~   ~override~ // Mace of Disruption
   SAY NAME2 @73 
   SAY DESC  @74
 
-COPY ~merchant/itm/w#shad.itm~  ~override~
+COPY ~merchant/itm/w#shad.itm~  ~override~ // Shadow Dragon Scale
   SAY NAME2 @81 
   SAY DESC  @82
   
-COPY ~merchant/itm/w#equal.itm~  ~override~
+COPY ~merchant/itm/w#equal.itm~  ~override~ // equalizer
   SAY NAME2 @83 
   SAY DESC  @84
   
@@ -136,3 +138,135 @@ EXTEND_BOTTOM ~ar1102.bcs~ ~merchant/baf/addin.baf~
 EXTEND_BOTTOM ~ar6004.bcs~ ~merchant/baf/addin.baf~
 
 COMPILE ~merchant/dlg/ribald.d~ 
+  
+/////                                                  \\\\\
+///// compat: use current spells for item effects      \\\\\
+/////                                                  \\\\\
+
+// add shield on-equip to harper pin
+LAF cd_items_casting_spells INT_VAR cast_at_level = 1 item_header = 0 probability = 100 update_refs = 0
+                            STR_VAR item  = ~w#jah1~ spell = spwi114 END
+                              
+// add freedom-of-movement to Firecam Full-Plate Armor, Sword of Arvoreen, Tsuki no Ken
+ACTION_FOR_EACH item IN ~w#keld2~ ~w#mazz1~ ~w#sola2~ BEGIN
+  LAF cd_items_casting_spells INT_VAR cast_at_level = 1 item_header = 0 probability = 100 update_refs = 0 
+                              STR_VAR item  = EVAL ~%item%~ spell = sppr403 END
+END
+
+// add luck on-equip to Tsuki no Ken
+LAF cd_items_casting_spells INT_VAR cast_at_level = 1 item_header = 0 probability = 100 update_refs = 0 
+                            STR_VAR item  = ~w#sola2~ spell = spwi209 END
+
+// add blindness on-hit to Tsuki no Ken
+LAF cd_items_casting_spells INT_VAR cast_at_level = 1 item_header = 1 probability = 100 
+                            STR_VAR item  = ~w#sola2~ spell = spwi222 END
+
+// cleanup of new effects
+COPY_EXISTING ~w#jah1.itm~  ~override~ // jaheira's harper pin
+              ~w#keld2.itm~ ~override~ // Firecam Full-Plate Armor
+              ~w#mazz1.itm~ ~override~ // Sword of Arvoreen
+              ~w#sola2.itm~ ~override~ // Tsuki no Ken
+  LPF DELETE_EFFECT INT_VAR silent = 1 check_headers = 0 match_opcode = 174 END                       // delete start/expiry sounds
+  LPF DELETE_EFFECT INT_VAR silent = 1 check_headers = 0 match_timing = 4 END                         // if there are random delayed effects
+  LPF ALTER_EFFECT  INT_VAR silent = 1 check_headers = 0 match_timing = 0 timing = 2 duration = 0 END // change limited to while-equipped
+  LPF ALTER_EFFECT  INT_VAR silent = 1 check_headers = 0 power = 0 resist_dispel = 0 END              // bypass protections
+  
+/////                                                  \\\\\
+///// iwd2ee compat code                               \\\\\
+/////                                                  \\\\\
+
+ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~0~ BEGIN // class revisions
+
+  OUTER_SET splstate_ME_ITEM_TYPE_EQUIPPED    = IDS_OF_SYMBOL (~splstate~ ~ME_ITEM_TYPE_EQUIPPED~)
+  OUTER_SET splstate_ME_SNEAK_ATTACK_MODIFIER = IDS_OF_SYMBOL (~splstate~ ~ME_SNEAK_ATTACK_MODIFIER~)
+
+  // melee generic changes
+  COPY_EXISTING ~w#equal.itm~ ~override~ // equalizer
+                ~w#foa.itm~   ~override~ // flail of ages +3
+                ~w#jah2.itm~  ~override~ // blackblood +3
+                ~w#jan1.itm~  ~override~ // flasher master bruiser mate
+                ~w#keld1.itm~ ~override~ // Hallowed Redeemer
+                ~w#mazz1.itm~ ~override~ // Sword of Arvoreen
+                ~w#mod.itm~   ~override~ // Mace of Disruption
+                ~w#sola2.itm~ ~override~ // Tsuki no Ken
+                ~w#valy1.itm~ ~override~ // Corthala Family Blade
+    READ_SHORT 0x1c item_type
+    READ_LONG  0x64 abil_off
+    READ_BYTE  abil_off hdr // grab melee/ranged from first header
+    PATCH_IF hdr = 1 BEGIN SET 288spcl = 5 END ELSE BEGIN SET 288spcl = 4 END
+    SET 288_save = (BIT18 + BIT19 + BIT21 + BIT22)                
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 287 target = 1 timing = 2 STR_VAR resource = USNONSNA END
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 288 target = 1 parameter1 = item_type parameter2 = splstate_ME_ITEM_TYPE_EQUIPPED timing = 2 savingthrow = 288_save special = 288spcl STR_VAR resource = USEQTYPE END
+    LPF ADD_ITEM_EFFECT INT_VAR type = hdr opcode = 500 target = 2 special = hdr STR_VAR resource = MEONHIT END
+    LPF ADD_ITEM_EFFECT INT_VAR type = hdr opcode = 500 target = 2 parameter2 = BIT24 savingthrow = (BIT14 + BIT19 + BIT23 + BIT24) STR_VAR resource = EXDAMAGE END
+
+  COPY_EXISTING ~w#foa.itm~  ~override~ // flail of ages +3
+    LPF ALTER_EFFECT INT_VAR check_globals = 0 match_type = 500 match_parameter2 = BIT24 parameter2 = 0 STR_VAR match_resource = EXDAMAGE END // slashing to bludgeon
+    LPF ALTER_EFFECT INT_VAR multi_match = 1 match_opcode = 12 opcode = 500 parameter1 = 0x00000601 parameter2 = BIT19 savingthrow = BIT16 timing = 0 dicesize = 0 dicenumber = 0 STR_VAR resource = EXDAMAGE END // convert fire damage
+    LPF ALTER_EFFECT INT_VAR multi_match = 1 match_opcode = 12 opcode = 500 parameter1 = 0x00000601 parameter2 = BIT17 savingthrow = BIT16 timing = 0 dicesize = 0 dicenumber = 0 STR_VAR resource = EXDAMAGE END // convert cold damage
+    LPF ALTER_EFFECT INT_VAR multi_match = 1 match_opcode = 12 opcode = 500 parameter1 = 0x00000601 parameter2 =  BIT16 savingthrow = BIT16 timing = 0 dicesize = 0 dicenumber = 0 STR_VAR resource = EXDAMAGE END // convert acid damage
+
+  COPY_EXISTING ~w#jah2.itm~  ~override~ // blackblood +3
+    LPF ALTER_EFFECT INT_VAR check_globals = 0 match_type = 500 match_parameter2 = BIT24 parameter2 = 0 STR_VAR match_resource = EXDAMAGE END // slashing to bludgeon
+    LPF ALTER_EFFECT INT_VAR match_opcode = 12 opcode = 500 parameter1 = 0x00000603 parameter2 =  BIT16 savingthrow = BIT16 timing = 0 dicesize = 0 dicenumber = 0 STR_VAR resource = EXDAMAGE END // convert acid damage
+
+  COPY_EXISTING ~w#jan1.itm~  ~override~ // flasher master bruiser mate
+                ~w#mazz1.itm~ ~override~ // Sword of Arvoreen
+    LPF ALTER_EFFECT INT_VAR check_globals = 0 match_type = 500 match_parameter2 = BIT24 parameter2 = BIT20 STR_VAR match_resource = EXDAMAGE END // slashing to piercing
+    
+  COPY_EXISTING ~w#keld1.itm~ ~override~ // Hallowed Redeemer
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 500 target = 1 special = 1 STR_VAR resource = MEMONKAN END
+    
+  COPY_EXISTING ~w#mod.itm~   ~override~ // Mace of Disruption
+    LPF ALTER_EFFECT INT_VAR check_globals = 0 match_type = 500 match_parameter2 = BIT24 parameter2 = 0 STR_VAR match_resource = EXDAMAGE END // slashing to bludgeon
+    
+  COPY_EXISTING ~w#sola2.itm~ ~override~ // Tsuki no Ken
+    LPF ALTER_EFFECT INT_VAR match_opcode = 12 opcode = 500 parameter1 = 0x0000060c parameter2 = BIT19 savingthrow = BIT16 timing = 0 dicesize = 0 dicenumber = 0 STR_VAR resource = EXDAMAGE END // convert fire damage
+
+  COPY_EXISTING ~w#gesen.itm~ ~override~ // gesen's bow
+    READ_SHORT 0x1c item_type
+    SET 288_save = (BIT17 + BIT18 + BIT19 + BIT21 + BIT22 + BIT23)                
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 288 target = 1 parameter1 = item_type parameter2 = splstate_ME_ITEM_TYPE_EQUIPPED    timing = 2 savingthrow = 288_save special = 7 STR_VAR resource = USEQTYPE END
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 288 target = 1 parameter1 = 1 parameter2 = splstate_ME_SNEAK_ATTACK_MODIFIER timing = 2 savingthrow = BIT16 STR_VAR resource = USSNEAKX END
+    LPF ADD_ITEM_EFFECT INT_VAR type = 2 opcode = 500 target = 2 special = 2 STR_VAR resource = MEONHIT END
+    LPF ADD_ITEM_EFFECT INT_VAR type = 2 opcode = 500 target = 2 parameter2 = BIT20 savingthrow = (BIT14 + BIT19 + BIT23 + BIT24) STR_VAR resource = EXDAMAGE END
+    LPF ALTER_EFFECT INT_VAR match_opcode = 12 opcode = 500 parameter1 = 0x00010800 parameter2 = 262144 savingthrow = BIT16 timing = 0 dicesize = 0 dicenumber = 0 STR_VAR resource = EXDAMAGE END // convert electrical damage
+    
+  // generic armor  
+  COPY_EXISTING ~w#jan2.itm~  ~override~ // Jansen AdventureWear
+                ~w#keld2.itm~ ~override~ // Firecam Full-Plate Armor
+                ~w#shad.itm~  ~override~ // Shadow Dragon Scale
+                ~w#sola1.itm~ ~override~ // Drow Elven Chain
+                ~w#valy2.itm~ ~override~ // Corthala Family Armor
+    READ_SHORT 0x1c item_type
+    SET 288_save = (BIT18 + BIT19 + BIT21 + BIT22)                
+    LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 288 target = 1 parameter1 = item_type parameter2 = splstate_ME_ITEM_TYPE_EQUIPPED timing = 2 savingthrow = 288_save special = 1 STR_VAR resource = USEQTYPE END
+ 
+  COPY_EXISTING ~w#jan2.itm~  ~override~ // Jansen AdventureWear
+    LPF ALTER_EFFECT INT_VAR check_headers = 0 match_opcode = 288 special = 2 STR_VAR match_resource = USEQTYPE END
+        
+END
+
+ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~4~ BEGIN // item revisions
+
+  COPY_EXISTING ~w#equal.itm~  ~override~ // equalizer
+    WRITE_LONG 0x18 (THIS | (BIT16 + BIT17 + BIT18 + BIT19)) // adds good, evil, lawful, chaotic flags
+    
+  COPY_EXISTING ~w#mod.itm~   ~override~ // Mace of Disruption
+    LPF ALTER_EFFECT INT_VAR check_globals = 0 match_type = 402 STR_VAR match_resource = EFFDIS14 resource = USDIS17 END // update disruption spell
+    
+END
+
+ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~39~ BEGIN // Minor Damage Resistance for Armor and Shields
+
+  // rsistance = half AC bonus
+  COPY_EXISTING ~w#keld2.itm~ ~override~ // Firecam Full-Plate Armor
+                ~w#shad.itm~  ~override~ // Shadow Dragon Scale
+                ~w#sola1.itm~ ~override~ // Drow Elven Chain
+                ~w#valy2.itm~ ~override~ // Corthala Family Armor
+    PATCH_IF ("%SOURCE_RES%" STRING_COMPARE_CASE "w#valy2" = 0) BEGIN SET res = 3 END ELSE BEGIN SET res = 4 END
+    FOR (op = 86 ; op < 90 ; ++op) BEGIN
+      LPF ADD_ITEM_EQEFFECT INT_VAR opcode = op target = 1 parameter1 = res timing = 2 END // 4% damage resistance
+    END
+
+END    
