@@ -175,6 +175,15 @@ COPY_EXISTING ~w#jah1.itm~  ~override~ // jaheira's harper pin
 ///// iwd2ee compat code                               \\\\\
 /////                                                  \\\\\
 
+ACTION_IF FILE_EXISTS_IN_GAME ~usInitialModifications.txt~ BEGIN // modifications from the ALWAYS block
+
+  INCLUDE ~iwd2ee/components/iwd2ee_functions.tpa~ // borrow some functions
+  
+  COPY_EXISTING ~w#ribald.cre~ ~override~ // ADD_CRE_EFFECT doens't work correctly on iwd2, le sigh
+    LPF IWD2_ADD_CRE_EFFECT INT_VAR opcode = 500 target = 1 timing = 9 STR_VAR resource = MEAPRBON effsource = USAPRBON END
+    
+END
+
 ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~0~ BEGIN // class revisions
 
   OUTER_SET splstate_ME_ITEM_TYPE_EQUIPPED    = IDS_OF_SYMBOL (~splstate~ ~ME_ITEM_TYPE_EQUIPPED~)
@@ -255,7 +264,25 @@ ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~4~ BEGIN // item revisions
   COPY_EXISTING ~w#mod.itm~   ~override~ // Mace of Disruption
     LPF ALTER_EFFECT INT_VAR check_globals = 0 match_type = 402 STR_VAR match_resource = EFFDIS14 resource = USDIS17 END // update disruption spell
     
-END
+END  
+
+ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~5~ BEGIN // Creature Revisions
+
+  COPY_EXISTING ~w#ribald.cre~ ~override~
+    LPF	IWD2_ADD_CRE_ITEM STR_VAR item = USAHFI1 slot = amulet END
+
+END    
+
+// ACTION_IF ((MOD_IS_INSTALLED ~iwd2ee.tp2~ ~6~) OR (MOD_IS_INSTALLED ~iwd2ee.tp2~ ~7~)) BEGIN END // CR adjustments (CR doesn't change either way)
+// ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~20~ BEGIN END // More Accurate Saving Throws for Enemies (ribald's saves would not change under new formulae)
+
+ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~23~ BEGIN // Better Racial Enemies for Rangers
+
+  COPY_EXISTING ~w#ribald.cre~ ~override~
+    WRITE_BYTE 0x303 (THIS BOR BIT5) // add 'process by better racial enemies' flag
+    WRITE_BYTE 0x386 191 
+
+END    
 
 ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~39~ BEGIN // Minor Damage Resistance for Armor and Shields
 
@@ -268,5 +295,19 @@ ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~39~ BEGIN // Minor Damage Resistance fo
     FOR (op = 86 ; op < 90 ; ++op) BEGIN
       LPF ADD_ITEM_EQEFFECT INT_VAR opcode = op target = 1 parameter1 = res timing = 2 END // 4% damage resistance
     END
+
+END    
+
+ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~46~ BEGIN // Reduce the HP bonuses of creatures in Heart of Fury Mode
+
+  COPY_EXISTING ~w#ribald.cre~ ~override~
+    LPF	IWD2_ADD_CRE_ITEM STR_VAR item = USHFMODA slot = lring END
+
+END    
+
+ACTION_IF MOD_IS_INSTALLED ~iwd2ee.tp2~ ~47~ BEGIN // Reduce the attack bonuses of creatures in Heart of Fury Mode
+
+  COPY_EXISTING ~w#ribald.cre~ ~override~
+    LPF	IWD2_ADD_CRE_ITEM STR_VAR item = USHFMODP slot = rring END
 
 END    
